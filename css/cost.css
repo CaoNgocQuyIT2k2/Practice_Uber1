@@ -1,0 +1,74 @@
+.cost {
+    display: flex;
+}
+
+.btncost {
+    background-color: #F48224;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition:all 0.3s ease 0s;
+    margin-top: 30px;
+    margin-left: 20px;
+   
+}
+
+.btncost button {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 5px 10px;
+}
+
+.btncost:hover,
+.btncost.active:hover{
+    color: #ffffff;
+}
+.btncost:before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color:rgb(63,94,251);;
+    width: 30%;
+    height: 1px;
+    transition:all 0.3s ease 0s;
+}
+.btncost:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    background-color:rgb(63,94,251);;
+    width: 30%;
+    height: 1px;
+    transition:all 0.3s ease 0s;
+}
+.btncost:hover:before,
+.btncost:hover:after,
+.btncost.active:before,
+.btncost.active:after{
+    width: 100%;
+}
+
+@media screen and (max-width: 575px){
+    .btncost{
+        margin-bottom: 50px !important;
+    }
+}
+
+/* đơn giá */
+.donGia {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #F48224;
+    display: none;
+}
+
+.donGia h2 {
+    font-size: 20px;
+
+}

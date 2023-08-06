@@ -1,0 +1,16 @@
+{
+  "name": "Uber",
+  "lockfileVersion": 3,
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "Uber"
+    }
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
